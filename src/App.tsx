@@ -1,7 +1,8 @@
 // src/App.tsx
 import React, { useState } from 'react';
 import { mergeA5ToA4 } from './utils';
-import './App.css'; // 引入样式文件
+import './App.css';
+import FooterInfo from '@/components/FooterInfo'; // 引入样式文件
 
 const App: React.FC = () => {
   const [a5Files, setA5Files] = useState<File[]>([]);
@@ -86,6 +87,9 @@ const App: React.FC = () => {
       <button onClick={handleMerge} className="merge-button">
         合并为 A4
       </button>
+
+      {/* 使用 FooterInfo 组件 */}
+      <FooterInfo />
     </div>
   );
 };

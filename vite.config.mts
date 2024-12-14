@@ -3,6 +3,11 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
     plugins: [react()],
+    resolve: {
+        alias: {
+            '@': '/src',  // 配置 '@' 为 'src' 目录的别名
+        },
+    },
     server: {
         port: 3000,
     },
