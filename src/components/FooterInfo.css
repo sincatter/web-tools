@@ -1,0 +1,29 @@
+/* src/components/FooterInfo.css */
+
+/* Footer info section */
+.footer-info {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    display: flex;               /* 使用 Flexbox 布局 */
+    justify-content: center;     /* 水平居中对齐 */
+    gap: 20px;                   /* 控制间距，可以根据需要调整 */
+}
+
+.footer-text {
+    display: flex;               /* 使用 Flexbox 布局 */
+    gap: 20px;                   /* 控制“Power by”和“Bug 反馈”之间的间距 */
+    align-items: center;         /* 垂直居中 */
+}
+
+.footer-text a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
