@@ -11,6 +11,7 @@ on:
       - '**/*.css'
       - '**/*.html'
       - '**/*.json'
+      - '**/*.yml'
       - Dockerfile
 
 jobs:
@@ -20,6 +21,17 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v3  # 检出代码
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'  # 设置 Node.js 版本，您可以根据需要修改
+
+      - name: Install npm dependencies
+        run: npm install  # 安装 npm 依赖
+
+      - name: Build the project
+        run: npm run build  # 执行 npm run build 来构建项目
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2  # 设置 Docker Buildx，用于构建多平台镜像
@@ -43,7 +55,7 @@ jobs:
         with:
           context: .  # Dockerfile 的路径
           push: true  # 推送到 Docker Hub
-          tags: ${{ secrets.DOCKER_USERNAME }}/a5toa4:latest  # 替换为你的 Docker Hub 仓库名称
+          tags: ${{ secrets.DOCKER_USERNAME }}/a5toa4:latest
 
       - name: Logout from Docker Hub
         run: docker logout
