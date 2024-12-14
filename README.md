@@ -18,5 +18,10 @@ npm run build
 ```
 ## docker部署
 ```shell
-
+docker run -itd \
+    --name a5toa4 \
+    --hostname a5toa4 \
+    -p 8382:80 \
+    --restart always \
+    sincatter/a5toa4:latest
 ```
