@@ -1,0 +1,14 @@
+/* src/styles/components/Header.css */
+header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: bold;
+}

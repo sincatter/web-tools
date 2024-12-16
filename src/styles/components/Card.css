@@ -1,0 +1,51 @@
+/* src/components/ToolCard.css */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit; /* 确保链接文本的颜色继承 */
+}
+
+.card-content {
+    display: flex;
+    padding: 16px;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 16px;
+    object-fit: cover; /* 保证图标按比例填充 */
+    border-radius: 50%;
+}
+
+.info {
+    flex-grow: 1; /* 右侧内容占满剩余空间 */
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 限制显示两行 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; /* 超出部分显示省略号 */
+}

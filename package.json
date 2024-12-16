@@ -1,5 +1,5 @@
 {
-  "name": "a5toa4",
+  "name": "web-tools",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -12,16 +12,19 @@
   "author": "",
   "license": "AGPL-3.0",
   "dependencies": {
+    "@types/node": "^22.10.2",
     "@types/react": "^19.0.1",
     "@types/react-dom": "^19.0.2",
     "@vitejs/plugin-react": "^4.3.4",
     "pdf-lib": "^1.17.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-router-dom": "^7.0.2",
     "typescript": "^5.7.2",
     "vite": "^6.0.3"
   },
   "devDependencies": {
+    "@types/react-router-dom": "^5.3.3",
     "@typescript-eslint/eslint-plugin": "^8.18.0",
     "@typescript-eslint/parser": "^8.18.0",
     "eslint": "^9.17.0",

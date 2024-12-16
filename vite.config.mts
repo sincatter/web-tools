@@ -6,6 +6,7 @@ export default defineConfig({
     resolve: {
         alias: {
             '@': '/src',  // 配置 '@' 为 'src' 目录的别名
+            "@styles": '/src/styles'
         },
     },
     server: {

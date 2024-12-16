@@ -1,0 +1,15 @@
+/* src/styles/pages/Home.css */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tools-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
